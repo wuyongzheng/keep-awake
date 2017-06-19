@@ -1,0 +1,3 @@
+rc -fo myrc.res myrc.rc
+cvtres -machine:ix86 -out:myres.obj myres.res
+cl /W3 awake.c myrc.obj user32.lib shell32.lib
